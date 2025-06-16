@@ -45,7 +45,7 @@ const Navbar = () => {
                         justifyContent: "space-between", 
                         alignItems: "center", 
                         padding: "8px 20px",  
-                        background: "gray"                                                           
+                        background: "teal"                                                           
                     }}
             >                
                 {/* <Typography

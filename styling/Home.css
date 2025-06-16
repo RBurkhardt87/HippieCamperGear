@@ -1,19 +1,85 @@
 /* HOME COMPONENT STYLING */
 
+
+.site-hero__container {
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+
+.site-hero__image {
+    background-image: url('/images/demo_image.jpg');
+    object-fit: cover;   
+}
+
+.site-hero__shadow-box {
+    margin: 50px;
+    background-color: rgba(16, 16, 16, 0.579);
+    border-radius: 10px;
+  
+}
+
 .site-hero__heading {
-    color: blue;
+    color: white;
+    padding: 30px;
+    /* background-color: rgba(0, 0, 0, 0.621);
+    border-radius: 10px; */
 }
 
 .site-hero__slogan {
-    color:blueviolet;
+    color:white;
+    justify-self: center;
+    padding: 30px;
 }
 
-/* TODO: styling to implement once desing style is complete 
+.site-hero__button {
+    width: 100px;
+    height: 35px;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.home-discovery-cards__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1.5em;
+    gap: 1.5em;
+    margin-top: 125px;
+    background-color: teal;
+}
+
+.home-discover-cards__card {
+    display: grid;
+    grid-template-areas: "card-heading"
+                            "card-description"
+                            "card-button";
+    padding: 10px;
+    gap: 1em;
+    justify-items: center;
+    background-color: rgb(235, 228, 228);
+    border-radius: 10px;
+}
+
+.home-discover-cards__card-heading {
+    grid-area: card-heading;
+}
+
+.home-discover-cards__card-description {
+    grid-area: card-description;
+}
+
+.home-discover-cards__card-button {
+    grid-area: card-button;
+}
+
+
+
+/* TODO: styling to implement once designing style is complete 
 
 
 
 
-.site-hero__image {}
+
 
 
 

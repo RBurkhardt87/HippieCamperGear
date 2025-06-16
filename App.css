@@ -63,7 +63,8 @@
 .max-width {
     width: 100%;
     max-width: 1024px;
-    padding: 1.5em;
+    /* padding: 1.5em; */
+    align-self: center;
 }
 
 /* NOTE: centering the main content  */
