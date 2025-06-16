@@ -1,0 +1,88 @@
+/* NOTE: Messing around with a day and night mode toggle 
+
+.main-background-day {
+    text-align: center;
+    background-image: url('/images/day_mode.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid rgb(255, 149, 0);
+    margin: 0px;
+    width: 100vw;
+    height: 100vw;
+}
+
+.main-background-night {
+    text-align: center;
+    background-image: url('/images/night_mode.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid rgb(255, 149, 0);
+    margin: 0px;
+    width: 100vw;
+    height: 100vw;
+} 
+
+.main-background {
+    text-align: center;
+    background-image: url('/images/minimal_style_landscape_design_1407.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid rgb(255, 149, 0);
+    margin: 0px;
+    width: 100vw;
+    height: 100vw;
+} 
+
+*/
+
+
+/* GLOBAL STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+
+/* LAYOUT */
+
+
+/* NOTE: setting the main content to a max-width of 1024px */
+.max-width {
+    width: 100%;
+    max-width: 1024px;
+    padding: 1.5em;
+}
+
+/* NOTE: centering the main content  */
+.max-width-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* NOTE: creating a 12 column grid */
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+/* NOTE: defaulting content to extend across all columns */
+.section-grid > * {
+    grid-column: 1 / -1;
+}
+
+

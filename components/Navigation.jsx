@@ -1,6 +1,7 @@
 import React from 'react'
 import { Tabs, Tab, Box, Link, Typography } from '@mui/material';
 import { useLocation } from 'react-router-dom';
+import '../styling/Navigation.css';
 
 
 
@@ -35,6 +36,7 @@ const Navbar = () => {
     } 
 
 
+
   return (
     
         <div className="nav-bar">
@@ -43,10 +45,10 @@ const Navbar = () => {
                         justifyContent: "space-between", 
                         alignItems: "center", 
                         padding: "8px 20px",  
-                        background: "green"                                                           
+                        background: "gray"                                                           
                     }}
             >                
-                <Typography
+                {/* <Typography
                     variant="h6"
                     sx={{
                     color: "black",
@@ -55,7 +57,12 @@ const Navbar = () => {
                     }}
                 >
                     Hippie Camper Gear
-                </Typography>
+                </Typography> */}
+                
+                <div className='HC-nav-logo-button border'>
+                    
+                </div>
+
                 <Tabs
                     value={getTab()}
                     textColor="inherit"
@@ -85,7 +92,7 @@ const Navbar = () => {
                         sx={{ 
                             color: "black", 
                             "&.Mui-selected": { 
-                              color: "rgb(240, 63, 9)",
+                              color: "white",
                             }
                             }}
                     />
@@ -97,7 +104,7 @@ const Navbar = () => {
                         sx={{ 
                             color: "black", 
                             "&.Mui-selected": { 
-                              color: "rgb(240, 63, 9)",
+                              color: "white",
                             }
                             }}
                     />
@@ -109,7 +116,7 @@ const Navbar = () => {
                         sx={{ 
                             color: "black", 
                             "&.Mui-selected": { 
-                              color: "rgb(240, 63, 9)",
+                              color: "white",
                             }
                             }} 
                     />
@@ -121,7 +128,7 @@ const Navbar = () => {
                         sx={{ 
                             color: "black", 
                             "&.Mui-selected": { 
-                              color: "rgb(240, 63, 9)",
+                              color: "white",
                             }
                             }}
                     />
@@ -133,7 +140,7 @@ const Navbar = () => {
                         sx={{ 
                             color: "black", 
                             "&.Mui-selected": { 
-                              color: "rgb(240, 63, 9)",
+                              color: "white",
                             }
                             }}
                     />
@@ -145,7 +152,7 @@ const Navbar = () => {
                         sx={{ 
                             color: "black", 
                             "&.Mui-selected": { 
-                              color: "rgb(240, 63, 9)",
+                              color: "white",
                             }
                             }}
                     />
@@ -157,7 +164,7 @@ const Navbar = () => {
                         sx={{ 
                             color: "black", 
                             "&.Mui-selected": { 
-                              color: "rgb(240, 63, 9)",
+                              color: "white",
                             }
                             }}
                     />
